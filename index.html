@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>107 желаний перед тем как стать зомби</title>
+<meta property="og:image" content="hero.png">
+<meta name="description" content="Список желаний 2030: личное исследование того, чего я на самом деле хочу.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Allison&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--cream:#f6efe4;--beige:#e9dcc6;--brown:#3a2a21;--soft:#7a6657;--olive:#7d8761;--pink:#c98791;--line:#d9c9b0;
+--serif:"Cormorant Garamond",Georgia,serif;--sans:Inter,system-ui,sans-serif}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:64px}
+body{background:var(--cream);color:var(--brown);font:16px/1.55 var(--sans);overflow-x:hidden}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+:focus-visible{outline:2px solid var(--pink);outline-offset:2px}
+h1,h2{font-family:var(--serif);font-weight:400;line-height:1.05}
+section{padding:80px 24px;max-width:1180px;margin:0 auto}
+h2{font-size:clamp(34px,5vw,56px);margin-bottom:14px}
+.lead{max-width:70ch;color:var(--soft);font-family:var(--serif);font-size:21px;margin-bottom:32px}
+
+nav{position:fixed;inset:0 0 auto 0;z-index:20;display:flex;justify-content:flex-end;align-items:center;padding:14px 24px;color:#fff;transition:.3s}
+nav.solid{background:rgba(246,239,228,.95);color:var(--brown);border-bottom:1px solid var(--line)}
+nav .links{display:flex;gap:22px;font-size:14px}
+nav a{color:inherit;text-decoration:none}
+.fab{position:fixed;right:16px;bottom:16px;z-index:20;background:var(--brown);color:var(--cream);padding:8px 16px;border-radius:99px;font-size:14px;font-variant-numeric:tabular-nums}
+
+.hero{min-height:100svh;max-width:none;padding:0 4vw;display:flex;align-items:stretch;position:relative;color:#fff;
+background:linear-gradient(180deg,rgba(40,24,14,.25),rgba(40,24,14,.7)),url(hero.png) center 35%/cover}
+.hero>div{max-width:none;margin:0;width:100%;display:flex;flex-direction:column;justify-content:space-between;padding:14svh 0 9vh}
+.hero h1{display:inline-block;align-self:flex-start;text-align:center;font:500 clamp(48px,8.8vw,168px)/.98 var(--serif);text-transform:uppercase;letter-spacing:.2em;
+ color:#f6efe4;animation:rise 1.2s ease both;text-shadow:0 2px 22px rgba(40,24,14,.4)}
+.hero h1 i{display:block;font:400 clamp(44px,8vw,152px)/.85 Allison,"Brush Script MT",cursive;text-transform:none;letter-spacing:0;margin-top:.12em;white-space:nowrap}
+.hero p{max-width:46ch;font:400 clamp(21px,2.4vw,27px)/1.3 var(--serif);margin:0 0 26px;opacity:.95}
+.btn{display:inline-block;background:var(--cream);color:var(--brown);padding:13px 30px;border-radius:99px;text-decoration:none;font:600 20px var(--serif)}
+.btn:hover{background:#fff}
+@keyframes rise{from{opacity:0;transform:translateY(24px)}}
+
+/* таблица */
+.bar{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:12px}
+.bar input,.bar select,.bar button{font:inherit;font-size:14px;padding:8px 14px;border:1px solid var(--line);border-radius:99px;background:#fbf7ef;color:var(--brown);min-width:0}
+.bar input{flex:1 1 220px}
+.bar button:hover{background:var(--beige)}
+.info{color:var(--soft);font-size:13px;margin-bottom:10px}
+.tw{border:1px solid var(--line);border-radius:6px;background:#fbf7ef;max-height:72vh;overflow:auto}
+table{width:100%;border-collapse:collapse;font-size:14px;line-height:1.3}
+th{position:sticky;top:0;z-index:1;background:var(--beige);text-align:left;padding:7px 10px;font-weight:500;cursor:pointer;white-space:nowrap;user-select:none}
+th.on::after{content:attr(data-d);color:var(--pink);margin-left:4px}
+td{padding:5px 10px;border-top:1px solid var(--line);vertical-align:top}
+tr:hover td{background:#f3eadb}
+td.n{color:var(--soft);font-size:12px;font-variant-numeric:tabular-nums}
+td.i{color:var(--pink);letter-spacing:1px;white-space:nowrap}
+.c{text-align:center}
+.b{display:inline-block;padding:1px 11px;border-radius:99px;font-size:12px;border:1px solid;white-space:nowrap;background:#fffdf8}
+.b.g{border-color:#e6bf55;color:#8a6a12;box-shadow:0 0 5px 1px rgba(236,196,84,.75),0 0 14px 3px rgba(236,196,84,.4)}
+.b.d{border-color:#ee9fb0;color:#b04e66;box-shadow:0 0 5px 1px rgba(240,150,172,.75),0 0 14px 3px rgba(240,150,172,.4)}
+.b.p{border-color:#7fc6f0;color:#2b78a8;box-shadow:0 0 5px 1px rgba(110,190,240,.75),0 0 14px 3px rgba(110,190,240,.4)}
+tr.done td.t{color:var(--soft);text-decoration:line-through;text-decoration-color:var(--pink)}
+.msg{padding:40px 20px;text-align:center;color:var(--soft)}
+td a{color:var(--pink);text-decoration:none}
+
+.prog{background:var(--beige);max-width:none}
+.prog>div{max-width:1180px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+.count{font:400 clamp(64px,10vw,120px)/1 var(--serif)}
+.count span{color:var(--soft);font-size:.5em}
+.stats{display:flex;gap:32px;margin:28px 0;flex-wrap:wrap}
+.stats b{display:block;font:400 40px var(--serif)}
+.stats span{font-size:13px;color:var(--soft)}
+.cap{color:var(--soft);font-family:var(--serif);font-size:20px}
+#heart{position:relative;width:min(100%,440px);aspect-ratio:1/.95;margin:0 auto;container-type:inline-size}
+#heart i{position:absolute;display:grid;place-items:center;border-radius:50%;border:1.5px solid var(--olive);background:transparent;
+ transform:translate(-50%,-50%);color:transparent;font:500 9px/1 var(--sans);font-size:1.9cqw;font-style:normal;font-variant-numeric:tabular-nums;
+ transition:background .5s,border-color .3s,box-shadow .35s,transform .25s,color .2s}
+#heart i.f{background:var(--pink);border-color:var(--pink)}
+#heart i.p{border-color:#7fc6f0;box-shadow:0 0 5px 1px rgba(110,190,240,.85),0 0 14px 4px rgba(110,190,240,.5)}
+#heart i:hover,#heart i.f:hover{z-index:3;transform:translate(-50%,-50%) scale(1.9);color:#6b3e48;border-color:#f6cdd5;
+ background:radial-gradient(circle at 50% 45%,#fffafb 0%,#fbe3e8 45%,#f4bcc8 100%);
+ box-shadow:0 0 8px 3px rgba(247,205,213,.95),0 0 22px 10px rgba(247,205,213,.65),0 0 46px 22px rgba(247,205,213,.38),0 0 80px 38px rgba(247,205,213,.18)}
+.hw{text-align:center}
+.snd{margin-top:18px;font-size:13px;color:var(--soft);border:1px solid var(--line);border-radius:99px;padding:6px 16px}
+.snd:hover{background:var(--cream)}
+
+footer{background:var(--brown);color:var(--cream);max-width:none;text-align:center;padding:64px 24px}
+footer h3{font:400 34px var(--serif)}
+footer p{opacity:.75;margin:8px 0 24px}
+.soc{display:flex;gap:14px;justify-content:center}
+.soc a{width:44px;height:44px;border:1px solid rgba(246,239,228,.4);border-radius:50%;display:grid;place-items:center}
+.soc a:hover{background:var(--pink);border-color:var(--pink)}
+.soc svg{width:20px;height:20px;fill:none;stroke:var(--cream);stroke-width:1.7}
+
+@media(max-width:900px){.prog>div{grid-template-columns:1fr}}
+@media(max-width:900px){.hero{background-position:72% 35%}.hero h1{font-size:9vw}.hero h1 i{font-size:10.5vw}}
+@media(max-width:700px){
+ nav .links{gap:14px;font-size:13px}section{padding:72px 18px}
+ thead{display:none}
+ .tw{max-height:none;border:0;background:none}
+ table,tbody{display:block}
+ tr{display:flex;flex-wrap:wrap;align-items:center;gap:2px 10px;padding:7px 4px;border-top:1px solid var(--line)}
+ td{border:0;padding:0;font-size:13px;color:var(--soft)}
+ tr:hover td{background:none}
+ td.n{order:-2;flex:0 0 30px;align-self:flex-start;padding-top:3px}
+ td.t{order:-1;flex:1 1 calc(100% - 40px);font-size:15px;color:var(--brown)}
+ tr.done td.t{color:var(--soft)}
+}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<nav id="nav"><div class="links"><a href="#wishes">Желания</a><a href="#progress">Прогресс</a><a href="#contacts">Контакты</a></div></nav>
+<div class="fab" id="fab">… / …</div>
+
+<header class="hero" id="top"><div>
+  <h1>Go<br>create <i>new experience</i></h1>
+  <div class="sub"><p>Список желаний 2030 для внутреннего исследования: чего я на самом деле хочу</p>
+  <a class="btn" href="#wishes">Посмотреть список</a></div>
+</div></header>
+
+<section id="wishes">
+  <h2>107 желаний перед тем как стать зомби</h2>
+  <p class="lead">Если твои мечты тебя не пугают, это не мечты, а унылый список дел</p>
+  <div class="bar" id="bar">
+    <input id="q" type="search" placeholder="Поиск по желаниям" aria-label="Поиск">
+    <select id="fCat" aria-label="Категория"></select>
+    <select id="fSt" aria-label="Статус"></select>
+    <select id="fYr" aria-label="Год"></select>
+    <select id="fBud" aria-label="Бюджет"></select>
+    <select id="fImp" aria-label="Важность"></select>
+    <select id="fMine" aria-label="Моё?"></select>
+    <select id="sort" aria-label="Сортировка"></select>
+    <button id="reset">Сбросить</button>
+  </div>
+  <p class="info" id="info"></p>
+  <div class="tw"><table>
+    <thead><tr>
+      <th data-k="n">№</th><th data-k="st">Статус</th><th data-k="t">Желание</th><th data-k="cat" class="c">Категория</th><th data-k="yr">Год</th>
+      <th data-k="bud" class="c">Бюджет, тыс. ₽</th><th data-k="imp">Важность</th><th data-k="mine">Моё?</th>
+    </tr></thead>
+    <tbody id="tb"><tr><td class="msg" colspan="8">Загружаю список…</td></tr></tbody>
+  </table></div>
+</section>
+
+<section class="prog" id="progress"><div>
+  <div>
+    <h2>Желания исполнены</h2>
+    <div class="count" id="count">0<span> / 107</span></div>
+    <div class="stats">
+      <div><b id="sTotal">107</b><span>всего желаний</span></div>
+      <div><b id="sDone">0</b><span>исполнено</span></div>
+      <div><b id="sProg">0</b><span>исполняется</span></div>
+      <div><b id="sPct">0%</b><span>пути пройдено</span></div>
+    </div>
+    <p class="cap">Есть три ответа на молитву: да, пока нет<br>и у меня для тебя есть кое-что другое</p>
+  </div>
+  <div class="hw"><div id="heart" aria-label="Сердце из кружков, по одному на желание"></div><button class="snd" id="snd">♪ нажми, чтобы включить звук</button></div>
+</div></section>
+
+<footer id="contacts">
+  <h3>Солянникова Олеся</h3>
+  <p>Существо, обменявшее корни на крылья</p>
+  <div class="soc" id="soc"></div>
+</footer>
+
+
+<script src="data.js"></script>
+<script>
+(function(){
+const $=s=>document.querySelector(s);
+const esc=t=>String(t).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const RB={'0':0,'< 100':1,'< 500':2,'> 500':3}, RS={'исполнено':0,'исполняется':1,'в мечтах':2};
+let W=[],T=0,sortK='n',sortD=1;
+
+/* CSV */
+function parse(t){const R=[];let r=[],f='',q=false;
+ for(let i=0;i<t.length;i++){const c=t[i];
+  if(q){if(c=='"'){if(t[i+1]=='"'){f+='"';i++}else q=false}else f+=c}
+  else if(c=='"')q=true;
+  else if(c==','){r.push(f);f=''}
+  else if(c=='\n'||c=='\r'){if(c=='\r'&&t[i+1]=='\n')i++;r.push(f);R.push(r);r=[];f=''}
+  else f+=c}
+ if(f||r.length){r.push(f);R.push(r)}return R}
+function toWishes(t){
+ const R=parse(t),h=R.findIndex(r=>(r[0]||'').trim()=='№');if(h<0)return [];
+ const H=R[h].map(x=>x.trim()),ix=n=>H.findIndex(x=>x.indexOf(n)==0);
+ const c={n:ix('№'),st:ix('Статус'),cat:ix('Категория'),t:ix('Желание'),yr:ix('Год'),bud:ix('Бюджет'),imp:ix('Важность'),mine:ix('Моё'),date:ix('Исполнено'),rep:ix('Отчёт')};
+ return R.slice(h+1).filter(r=>/^\d+$/.test((r[0]||'').trim())).map(r=>{const o={};
+  for(const k in c)o[k]=c[k]<0?'':(r[c[k]]||'').trim();
+  o.n=+o.n;o.yr=+o.yr||0;o.st=o.st.toLowerCase();o.bud=o.bud.replace(/\s+/g,' ');
+  o.ir=(o.imp.match(/★/g)||[]).length;o.br=o.bud in RB?RB[o.bud]:9;return o})}
+
+/* загрузка с запасным кэшем */
+async function load(){
+ let txt='';
+ try{const r=await fetch(CSV_URL+'&t='+Date.now());if(!r.ok)throw 0;txt=await r.text();try{localStorage.setItem('wl_csv',txt)}catch(e){}}
+ catch(e){try{txt=localStorage.getItem('wl_csv')||''}catch(e2){}}
+ W=toWishes(txt);
+ if(!W.length){$('#tb').innerHTML='<tr><td class="msg" colspan="8">Не удалось загрузить список. Обнови страницу через минуту.</td></tr>';$('#fab').textContent='';return}
+ T=W.length;init()}
+
+/* фильтры */
+const F={cat:'#fCat',st:'#fSt',yr:'#fYr',bud:'#fBud',imp:'#fImp',mine:'#fMine'};
+const NAMES={cat:'Все категории',st:'Любой статус',yr:'Любой год',bud:'Любой бюджет',imp:'Любая важность',mine:'Моё? — любое'};
+function fill(k,vals){const s=$(F[k]);s.innerHTML='<option value="">'+NAMES[k]+'</option>'+vals.map(v=>'<option>'+esc(v)+'</option>').join('');s.onchange=draw}
+const uniq=k=>[...new Set(W.map(w=>w[k]).filter(v=>v!==''&&v!==0))];
+function init(){
+ fill('cat',uniq('cat'));
+ fill('st',Object.keys(RS).filter(s=>W.some(w=>w.st==s)));
+ fill('yr',uniq('yr').sort().map(String));
+ fill('bud',uniq('bud').sort((a,b)=>(RB[a]??9)-(RB[b]??9)));
+ fill('imp',['★★★','★★','★']);
+ fill('mine',uniq('mine'));
+ const so=$('#sort');so.innerHTML=[['n','Сортировка: по номеру'],['yr','по году'],['br','по бюджету'],['ir','по важности'],['cat','по категории'],['sr','по статусу'],['mine','по «Моё?»']].map(a=>'<option value="'+a[0]+'">'+a[1]+'</option>').join('');
+ so.onchange=()=>{sortK=so.value;sortD=sortK=='ir'?-1:1;draw()};
+ $('#q').oninput=draw;
+ $('#reset').onclick=()=>{$('#q').value='';for(const k in F)$(F[k]).value='';so.value='n';sortK='n';sortD=1;draw()};
+ document.querySelectorAll('th').forEach(th=>th.onclick=()=>{
+  const m={bud:'br',imp:'ir',st:'sr'},k=m[th.dataset.k]||th.dataset.k;
+  if(sortK==k)sortD=-sortD;else{sortK=k;sortD=k=='ir'?-1:1}
+  const o=$('#sort');o.value=[...o.options].some(x=>x.value==k)?k:'n';draw()});
+ buildHeart();stats();draw()}
+
+function draw(){
+ const q=$('#q').value.trim().toLowerCase(),f={};for(const k in F)f[k]=$(F[k]).value;
+ let L=W.filter(w=>(!q||w.t.toLowerCase().includes(q)||w.cat.toLowerCase().includes(q))&&
+  (!f.cat||w.cat==f.cat)&&(!f.st||w.st==f.st)&&(!f.yr||String(w.yr)==f.yr)&&(!f.bud||w.bud==f.bud)&&(!f.imp||w.imp==f.imp)&&(!f.mine||w.mine==f.mine));
+ const val=w=>sortK=='sr'?(RS[w.st]??9):w[sortK];
+ L.sort((a,b)=>{const x=val(a),y=val(b);
+  const c=typeof x=='number'?x-y:String(x).localeCompare(String(y),'ru');return (c||a.n-b.n)*(c?sortD:1)});
+ document.querySelectorAll('th').forEach(th=>{const m={bud:'br',imp:'ir',st:'sr'},k=m[th.dataset.k]||th.dataset.k;
+  th.classList.toggle('on',k==sortK);th.dataset.d=sortD>0?'↑':'↓'});
+ $('#info').textContent='Показано '+L.length+' из '+T;
+ $('#tb').innerHTML=L.length?L.map(w=>{
+  const b=w.st=='исполнено'?'d':w.st=='исполняется'?'p':'g';
+  return '<tr class="'+(b=='d'?'done':'')+'"><td class="n">'+w.n+'</td><td><span class="b '+b+'">'+esc(w.st)+(w.date&&b=='d'?' · '+esc(w.date):'')+'</span></td><td class="t">'+esc(w.t)+'</td><td class="c">'+esc(w.cat)+'</td><td>'+(w.yr||'')+'</td><td class="c">'+esc(w.bud)+'</td><td class="i">'+esc(w.imp)+'</td><td>'+esc(w.mine)+'</td></tr>'}).join('')
+  :'<tr><td class="msg" colspan="8">Ничего не нашлось. Попробуй сбросить фильтры.</td></tr>'}
+
+/* прогресс */
+const done=()=>W.filter(w=>w.st=='исполнено').length;
+function stats(){const d=done(),p=W.filter(w=>w.st=='исполняется').length;
+ $('#count').innerHTML=d+'<span> / '+T+'</span>';$('#fab').textContent=d+' / '+T;
+ $('#sTotal').textContent=T;$('#sDone').textContent=d;$('#sProg').textContent=p;$('#sPct').textContent=Math.round(d/T*100)+'%'}
+
+/* сердце */
+function buildHeart(){
+ const heart=$('#heart'),inH=(x,y)=>Math.pow(x*x+y*y-1,3)-x*x*y*y*y<=0;
+ let cells=[];
+ for(let s=0.3;s>0.08;s-=0.002){cells=[];
+  for(let y=1.3;y>=-1.3;y-=s)for(let x=-1.3;x<=1.3;x+=s){const xx=x+(Math.round(y/s)%2?s/2:0);
+   if(inH(xx,y))cells.push({x:xx,y,s})}
+  if(cells.length>=T)break}
+ cells.sort((a,b)=>(b.x*b.x+b.y*b.y)-(a.x*a.x+a.y*a.y));cells=cells.slice(cells.length-T);
+ cells.sort((a,b)=>b.y-a.y||a.x-b.x);
+ const sz=cells[0].s,by={};W.forEach(w=>by[w.n]=w);
+ cells.forEach((c,k)=>{const e=document.createElement('i');
+  e.style.left=((c.x+1.3)/2.6*100)+'%';e.style.top=((1.3-c.y)/2.6*100-8)+'%';
+  e.style.width=(sz/2.6*100*.78)+'%';e.style.aspectRatio='1';e.textContent=k+1;
+  const w=by[k+1];if(w){e.title=(k+1)+'. '+w.t;e.className=w.st=='исполнено'?'f':w.st=='исполняется'?'p':''}
+  heart.appendChild(e)});
+ /* двойной удар сердца при наведении (браузер включает звук только после первого клика на странице) */
+ let ac=null,on=true,last=null,tl=0;
+ const AC=window.AudioContext||window.webkitAudioContext;
+ const snd=$('#snd'),run=()=>!!ac&&ac.state=='running';
+ const lab=()=>{snd.textContent=run()?(on?'♪ звук: вкл':'♪ звук: выкл'):'♪ нажми, чтобы включить звук';snd.setAttribute('aria-pressed',run()&&on)};
+ function unlock(){if(!AC)return;if(!ac){ac=new AC();ac.onstatechange=lab}if(ac.state!='running')ac.resume().then(lab).catch(()=>{})}
+ ['pointerdown','pointerup','touchend','click','keydown'].forEach(ev=>addEventListener(ev,unlock,{passive:true}));
+ let wasLocked=true;['pointerdown','keydown'].forEach(ev=>snd.addEventListener(ev,()=>{wasLocked=!run()},true));
+ function thump(t,f,v){
+  const o=ac.createOscillator(),h=ac.createOscillator(),g=ac.createGain(),lp=ac.createBiquadFilter(),hg=ac.createGain();
+  o.type='sine';o.frequency.setValueAtTime(f,t);o.frequency.exponentialRampToValueAtTime(f*.5,t+.14);
+  h.type='triangle';h.frequency.setValueAtTime(f*2.2,t);h.frequency.exponentialRampToValueAtTime(f*1.1,t+.1);hg.gain.value=.4;   /* обертон, чтобы слышно на маленьких динамиках */
+  lp.type='lowpass';lp.frequency.value=380;
+  g.gain.setValueAtTime(.0001,t);g.gain.exponentialRampToValueAtTime(v,t+.012);g.gain.exponentialRampToValueAtTime(.0001,t+.22);
+  o.connect(g);h.connect(hg);hg.connect(g);g.connect(lp);lp.connect(ac.destination);
+  o.start(t);h.start(t);o.stop(t+.25);h.stop(t+.25)}
+ function beep(){const n=performance.now();if(!on||!ac||ac.state!='running'||n-tl<450)return;tl=n;
+  const t=ac.currentTime;thump(t,105,.8);thump(t+.19,90,.58)}   /* «тук-тук» */
+ heart.addEventListener('pointerover',e=>{const d=e.target.closest('i');if(d&&d!==last){last=d;beep()}if(!d)last=null});
+ heart.addEventListener('pointerleave',()=>last=null);
+ snd.onclick=()=>{if(!wasLocked)on=!on;lab()};lab()}
+
+/* соцсети и меню */
+const ic={instagram:'<rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.500" cy="6.500" r=".6"/>',
+telegram:'<path d="M21 4 3 11l5 2 2 6 3-4 5 4z"/><path d="M8 13l9-6"/>',
+pinterest:'<circle cx="12" cy="12" r="9"/><path d="M10.800 20.600 12.200 12.300"/><path d="M9.800 14.200C8.400 11 10 7.600 12.600 7.600c2.200 0 3.600 1.400 3.600 3.300 0 2.100-1.400 3.700-3.200 3.700-.8 0-1.400-.6-1.200-1.400"/>'};
+$('#soc').innerHTML=Object.keys(ic).map(k=>'<a href="'+SOCIAL[k]+'" aria-label="'+k+'" target="_blank" rel="noopener"><svg viewBox="0 0 24 24">'+ic[k]+'</svg></a>').join('');
+const nav=$('#nav'),onS=()=>nav.classList.toggle('solid',scrollY>innerHeight*.7);
+addEventListener('scroll',onS,{passive:true});onS();
+load();
+})();
+</script>
+</body>
+</html>
